@@ -1,5 +1,5 @@
 export default async function Page() {
-  const res = await fetch("http://localhost:3000/ramens", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/ramens`, {
     cache: "no-store"
   })
 
